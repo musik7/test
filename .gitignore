@@ -1,0 +1,22 @@
+# Build folders
+build/
+build_wasm/
+
+# Generated Flatbuffers
+include/profile_generated.h
+
+# Binary/executable
+*.bin
+*.o
+*.so
+*.a
+*.wasm
+*.js.map
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Emscripten cache
+.emscripten_cache/
