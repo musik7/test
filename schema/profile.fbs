@@ -1,1 +1,18 @@
+namespace Profiler;
 
+table StackFrame {
+  pc: uint32;
+  module_id: uint16;
+  func_name: string;
+}
+
+table Sample {
+  timestamp: uint64;
+  frames: [StackFrame];
+}
+
+table ProfileRoot {
+  samples: [Sample];
+}
+
+root_type ProfileRoot;
